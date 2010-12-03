@@ -75,6 +75,16 @@
 		8C31E0C412A5ECB100F539CC /* SpecTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C31E0C312A5ECB100F539CC /* SpecTest.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8C218BFB12A996CD00C06D54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C31E00412A5EBA500F539CC /* Specs */;
+			remoteInfo = Specs;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AgendaTechClientAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaTechClientAppDelegate.h; sourceTree = "<group>"; };
@@ -214,7 +224,6 @@
 		8C31E08612A5EC7800F539CC /* NSObject+KiwiVerifierAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KiwiVerifierAdditions.m"; sourceTree = "<group>"; };
 		8C31E08712A5EC7800F539CC /* NSValue+KiwiAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+KiwiAdditions.h"; sourceTree = "<group>"; };
 		8C31E08812A5EC7800F539CC /* NSValue+KiwiAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+KiwiAdditions.m"; sourceTree = "<group>"; };
-		8C31E0C212A5ECB100F539CC /* SpecTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecTest.h; sourceTree = "<group>"; };
 		8C31E0C312A5ECB100F539CC /* SpecTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecTest.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* AgendaTechClient-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AgendaTechClient-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,7 +278,6 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				8C31E00612A5EBA500F539CC /* Specs-Info.plist */,
-				8C31E0C212A5ECB100F539CC /* SpecTest.h */,
 				8C31E0C312A5ECB100F539CC /* SpecTest.m */,
 			);
 			name = CustomTemplate;
@@ -451,6 +459,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8C218BFC12A996CD00C06D54 /* PBXTargetDependency */,
 			);
 			name = AgendaTechClient;
 			productName = AgendaTechClient;
@@ -530,7 +539,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "# Run the unit tests in this test bundle.\n#\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\" 1> /tmp/RunUnitTests.out";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -611,6 +620,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C218BFC12A996CD00C06D54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C31E00412A5EBA500F539CC /* Specs */;
+			targetProxy = 8C218BFB12A996CD00C06D54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
