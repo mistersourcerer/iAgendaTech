@@ -1,9 +1,9 @@
 //
 //  main.m
-//  AgendaTechClient
+//  iAgendaTech
 //
-//  Created by Ricardo Valeriano dos Santos on 12/1/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Created by Ricardo on 2/8/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
