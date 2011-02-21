@@ -33,15 +33,4 @@
 	[self request:[NSURL URLWithString:url]];
 }
 
-#pragma mark -
-#pragma mark NSURLConnection delegate implementation
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
-}
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-}
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-}
--(void)connectionDidFinishLoading:(NSURLConnection *)connection {
-}
-
 @end
