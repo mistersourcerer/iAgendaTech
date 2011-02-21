@@ -10,7 +10,7 @@
 
 - (void) testMath
 {
-	STAssertTrue((1+1) == 3, @"You've got a failing test");
+	STAssertFalse((1+1) == 3, @"Oops, your compiler need some math classes.");
 }
 
 @end
