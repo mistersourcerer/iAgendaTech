@@ -19,6 +19,7 @@
 		8C4984381312D8F70056AB2F /* AgendaTechServiceResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4984371312D8F70056AB2F /* AgendaTechServiceResources.m */; };
 		8C4984391312D8F70056AB2F /* AgendaTechServiceResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4984371312D8F70056AB2F /* AgendaTechServiceResources.m */; };
 		8C4986241312EF890056AB2F /* AgendaTechMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4986231312EF890056AB2F /* AgendaTechMock.m */; };
+		8C4986B91312FB060056AB2F /* AgendaTechClientMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4986B81312FB060056AB2F /* AgendaTechClientMock.m */; };
 		8C5E0F171312ACB4003196F9 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5E0F0A1312ACB4003196F9 /* GTMIPhoneUnitTestDelegate.m */; };
 		8C5E0F181312ACB4003196F9 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5E0F0B1312ACB4003196F9 /* GTMIPhoneUnitTestMain.m */; };
 		8C5E0F191312ACB4003196F9 /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5E0F0D1312ACB4003196F9 /* GTMObjC2Runtime.m */; };
@@ -63,6 +64,9 @@
 		8C4986081312EEB80056AB2F /* AgendaTechServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaTechServiceDelegate.h; sourceTree = "<group>"; };
 		8C4986221312EF890056AB2F /* AgendaTechMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaTechMock.h; sourceTree = "<group>"; };
 		8C4986231312EF890056AB2F /* AgendaTechMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaTechMock.m; sourceTree = "<group>"; };
+		8C4986921312F8BA0056AB2F /* AgendaTechClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaTechClient.h; sourceTree = "<group>"; };
+		8C4986B71312FB060056AB2F /* AgendaTechClientMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaTechClientMock.h; sourceTree = "<group>"; };
+		8C4986B81312FB060056AB2F /* AgendaTechClientMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaTechClientMock.m; sourceTree = "<group>"; };
 		8C5E0EEC1312AC39003196F9 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C5E0EEE1312AC39003196F9 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		8C5E0F081312ACB4003196F9 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 				8C4984361312D8F70056AB2F /* AgendaTechServiceResources.h */,
 				8C4984371312D8F70056AB2F /* AgendaTechServiceResources.m */,
 				8C4986081312EEB80056AB2F /* AgendaTechServiceDelegate.h */,
+				8C4986921312F8BA0056AB2F /* AgendaTechClient.h */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -239,6 +244,8 @@
 				8C5E0FAA1312B5D9003196F9 /* AgendaTechServiceMock.m */,
 				8C4986221312EF890056AB2F /* AgendaTechMock.h */,
 				8C4986231312EF890056AB2F /* AgendaTechMock.m */,
+				8C4986B71312FB060056AB2F /* AgendaTechClientMock.h */,
+				8C4986B81312FB060056AB2F /* AgendaTechClientMock.m */,
 			);
 			name = Mocks;
 			sourceTree = "<group>";
@@ -378,6 +385,7 @@
 				8C4984171312D50D0056AB2F /* AgendaTechServiceConfiguration.m in Sources */,
 				8C4984391312D8F70056AB2F /* AgendaTechServiceResources.m in Sources */,
 				8C4986241312EF890056AB2F /* AgendaTechMock.m in Sources */,
+				8C4986B91312FB060056AB2F /* AgendaTechClientMock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
