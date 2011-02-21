@@ -2,25 +2,37 @@
 
 #import "MocksHeader.h"
 
-#import "AgendaTech.h"
-
 @interface AgendaTechTests : GTMTestCase
 {
-	
+	AgendaTechServiceMock *service;
+	AgendaTechMock *agendaTech;
+	AgendaTechClientMock *client;
 }
 @end
 
 @implementation AgendaTechTests
 
-- (void) test_should_retrieve_the_events
+-(void)setUp
 {
-	AgendaTechServiceMock *service = [[AgendaTechServiceMock alloc] init];
-	AgendaTech *agendaTech = [[AgendaTech alloc] initWithService:service];
+	service = [[AgendaTechServiceMock alloc] init];
+	agendaTech = [[AgendaTechMock alloc] initWithService:service];
 	
-	NSArray *events = [agendaTech allEvents];
+	client = [[AgendaTechClientMock alloc] init];
+	agendaTech.delegate = client;
+}
+
+-(void)tearDown
+{
+	[service release];
+	[agendaTech release];
+	[client release];
+}
+
+-(void)test_should_assyncronously_retrieve_the_events
+{
+	[agendaTech requestAllEvents];
 	
-	BOOL isEventsPopulated = [events count] > 0;
-	STAssertTrue(isEventsPopulated, @"Events should not be empty");
+	STAssertTrue([client.eventos count] > 0, @"AgendaTech should call client passing an array of events.");
 }
 
 @end

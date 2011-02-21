@@ -9,14 +9,16 @@
 #import <Foundation/Foundation.h>
 
 #import "AgendaTechService.h"
+#import "AgendaTechClient.h"
 
 @interface AgendaTech : NSObject<AgendaTechServiceDelegate>	{
 
 }
 
 @property(nonatomic, retain) NSObject<AgendaTechService> *service;
+@property(nonatomic, retain) NSObject<AgendaTechClient> *delegate;
 
 -(id)initWithService:(NSObject<AgendaTechService> *)service;
--(NSArray *)allEvents;
+-(void)requestAllEvents;
 
 @end

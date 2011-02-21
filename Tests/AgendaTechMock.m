@@ -18,4 +18,9 @@
 	responseReceived = YES;
 }
 
+-(void)requestAllEvents
+{
+	[self.delegate didLoadEvents:[NSArray arrayWithObject:@"a"]];
+}
+
 @end

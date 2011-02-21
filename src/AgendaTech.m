@@ -11,7 +11,7 @@
 
 @implementation AgendaTech
 
-@synthesize service;
+@synthesize service, delegate;
 
 -(id)initWithService:(NSObject<AgendaTechService> *)newService
 {
@@ -23,20 +23,18 @@
 	return self;
 }
 
--(NSArray *)allEvents
+-(void)requestAllEvents
 {
-	//NSString *eventosJSON = [service eventos];
-
-	NSMutableArray *events = [NSMutableArray arrayWithCapacity:1];
-	[events addObject:@"oples"];
-	
-	return [NSArray arrayWithArray:events];
+	[service eventos];
 }
 
 #pragma mark -
 #pragma mark AgendaTechServiceDelegate implementation
 -(void)responseReceived:(NSString *)response
 {
+	NSArray *eventos = [NSArray arrayWithObject:@""];
+	// parser json:response
+	[delegate didLoadEvents:eventos];
 }
 
 #pragma mark -
