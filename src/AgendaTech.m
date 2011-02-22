@@ -8,7 +8,6 @@
 
 #import "AgendaTech.h"
 
-
 @implementation AgendaTech
 
 @synthesize service, delegate;
@@ -32,7 +31,8 @@
 #pragma mark AgendaTechServiceDelegate implementation
 -(void)responseReceived:(NSString *)response
 {
-	NSArray *eventos = [NSArray arrayWithObject:@""];
+	Evento *e = [[[Evento alloc] init] autorelease];
+	NSArray *eventos = [NSArray arrayWithObject:e];
 	// parser json:response
 	[delegate didLoadEvents:eventos];
 }

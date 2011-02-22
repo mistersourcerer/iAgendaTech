@@ -23,7 +23,15 @@
 -(void)request:(NSURL *)url
 {
 	lastCalledUrl = [url absoluteString];
-	[delegate responseReceived:nil];
+	
+	NSMutableString *jsonPath = [[NSMutableString alloc] init];
+	[jsonPath appendString:[[NSFileManager defaultManager] currentDirectoryPath]];
+	[jsonPath appendString:@"/Tests/fixtures/eventos_json"];
+	
+	NSString *response = [NSString stringWithContentsOfFile:jsonPath encoding:NSStringEncodingConversionAllowLossy error:nil];
+	[jsonPath release];
+	
+	[delegate responseReceived:response];
 }
 
 -(void)eventos

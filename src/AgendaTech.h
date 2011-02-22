@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#import "AgendaTechServiceDelegate.h"
 #import "AgendaTechService.h"
 #import "AgendaTechClient.h"
+#import "Evento.h"
 
 @interface AgendaTech : NSObject<AgendaTechServiceDelegate>	{
 

@@ -53,6 +53,8 @@
 		8CEAA0B013143FFB00C2370B /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAA09C13143FFB00C2370B /* CJSONScanner.m */; };
 		8CEAA0B113143FFB00C2370B /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAA09E13143FFB00C2370B /* CJSONSerializer.m */; };
 		8CEAA0C4131442F000C2370B /* eventos_json in Resources */ = {isa = PBXBuildFile; fileRef = 8CEAA0C3131442F000C2370B /* eventos_json */; };
+		8CEAA10713144A7000C2370B /* Evento.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAA10613144A7000C2370B /* Evento.m */; };
+		8CEAA10813144A7000C2370B /* Evento.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEAA10613144A7000C2370B /* Evento.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,8 @@
 		8CEAA09E13143FFB00C2370B /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
 		8CEAA09F13143FFB00C2370B /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
 		8CEAA0C3131442F000C2370B /* eventos_json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eventos_json; sourceTree = "<group>"; };
+		8CEAA10513144A7000C2370B /* Evento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Evento.h; sourceTree = "<group>"; };
+		8CEAA10613144A7000C2370B /* Evento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Evento.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* iAgendaTech-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iAgendaTech-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -237,6 +241,8 @@
 				8C4984301312D8D10056AB2F /* Service */,
 				8C5E0F3B1312B25D003196F9 /* AgendaTech.h */,
 				8C5E0F3C1312B25D003196F9 /* AgendaTech.m */,
+				8CEAA10513144A7000C2370B /* Evento.h */,
+				8CEAA10613144A7000C2370B /* Evento.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -482,6 +488,7 @@
 				8CEAA0AF13143FFB00C2370B /* CJSONDeserializer.m in Sources */,
 				8CEAA0B013143FFB00C2370B /* CJSONScanner.m in Sources */,
 				8CEAA0B113143FFB00C2370B /* CJSONSerializer.m in Sources */,
+				8CEAA10813144A7000C2370B /* Evento.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +520,7 @@
 				8CEAA0A613143FFB00C2370B /* CJSONDeserializer.m in Sources */,
 				8CEAA0A713143FFB00C2370B /* CJSONScanner.m in Sources */,
 				8CEAA0A813143FFB00C2370B /* CJSONSerializer.m in Sources */,
+				8CEAA10713144A7000C2370B /* Evento.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

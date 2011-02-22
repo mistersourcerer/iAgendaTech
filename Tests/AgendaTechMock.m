@@ -20,7 +20,8 @@
 
 -(void)requestAllEvents
 {
-	[self.delegate didLoadEvents:[NSArray arrayWithObject:@"a"]];
+	Evento *e = [[Evento alloc] init];
+	[self.delegate didLoadEvents:[NSArray arrayWithObject:e]];
 }
 
 @end
