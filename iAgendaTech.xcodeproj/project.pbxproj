@@ -18,6 +18,7 @@
 		8C1390811315A20B0059A716 /* EventoParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1390801315A20B0059A716 /* EventoParserTests.m */; };
 		8C13908A1315A3AF0059A716 /* EventoParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1390891315A3AF0059A716 /* EventoParser.m */; };
 		8C13908B1315A3AF0059A716 /* EventoParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1390891315A3AF0059A716 /* EventoParser.m */; };
+		8C1391DA1315B4190059A716 /* BogusEvento.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1391D91315B4190059A716 /* BogusEvento.m */; };
 		8C5E0F171312ACB4003196F9 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5E0F0A1312ACB4003196F9 /* GTMIPhoneUnitTestDelegate.m */; };
 		8C5E0F181312ACB4003196F9 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5E0F0B1312ACB4003196F9 /* GTMIPhoneUnitTestMain.m */; };
 		8C5E0F191312ACB4003196F9 /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5E0F0D1312ACB4003196F9 /* GTMObjC2Runtime.m */; };
@@ -73,6 +74,8 @@
 		8C1390801315A20B0059A716 /* EventoParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventoParserTests.m; sourceTree = "<group>"; };
 		8C1390881315A3AF0059A716 /* EventoParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventoParser.h; sourceTree = "<group>"; };
 		8C1390891315A3AF0059A716 /* EventoParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventoParser.m; sourceTree = "<group>"; };
+		8C1391D81315B4190059A716 /* BogusEvento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BogusEvento.h; sourceTree = "<group>"; };
+		8C1391D91315B4190059A716 /* BogusEvento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BogusEvento.m; sourceTree = "<group>"; };
 		8C5E0EEC1312AC39003196F9 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C5E0EEE1312AC39003196F9 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		8C5E0F081312ACB4003196F9 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
@@ -291,6 +294,8 @@
 			children = (
 				8CEAA0C3131442F000C2370B /* eventos_json */,
 				8CEAA6721315860900C2370B /* eventos_json_1 */,
+				8C1391D81315B4190059A716 /* BogusEvento.h */,
+				8C1391D91315B4190059A716 /* BogusEvento.m */,
 			);
 			path = fixtures;
 			sourceTree = "<group>";
@@ -461,6 +466,7 @@
 				8C13903B13159D410059A716 /* Evento.m in Sources */,
 				8C1390811315A20B0059A716 /* EventoParserTests.m in Sources */,
 				8C13908A1315A3AF0059A716 /* EventoParser.m in Sources */,
+				8C1391DA1315B4190059A716 /* BogusEvento.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

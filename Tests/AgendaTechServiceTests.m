@@ -4,6 +4,7 @@
 
 #import "ClientMock.h"
 #import "ServiceMock.h"
+#import "BogusEvento.h"
 
 @interface AgendaTechServiceTests : GTMTestCase
 {
@@ -59,6 +60,18 @@
 
 	Evento *evento = [client.eventos objectAtIndex:0];
 	BOOL isAnEvento = [evento isKindOfClass:[Evento class]];
-	STAssertTrue(isAnEvento, @"Should be an evento.");
+	STAssertTrue(isAnEvento, @"Should be an Evento.");
+}
+
+- (void) test_should_send_an_array_of_valid_eventos_to_client {
+	[service loadAllEvents];
+	
+	Evento *evento = [[BogusEvento alloc] init];
+	Evento *parsed = [client.eventos objectAtIndex:0];
+	
+	BOOL isValidEvento = [parsed isEqual:evento];
+	STAssertTrue(isValidEvento, @"Should be a valid Evento.");
+	
+	[evento release];
 }
 @end
