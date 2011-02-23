@@ -2,21 +2,19 @@
 //  AgendaTechService.h
 //  iAgendaTech
 //
-//  Created by Ricardo on 2/21/11.
+//  Created by Ricardo on 2/23/11.
 //  Copyright 2011 _. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "AgendaTechServiceConfiguration.h"
-#import "AgendaTechServiceDelegate.h"
+#import "AgendaTechClient.h"
 
 @protocol AgendaTechService
 
-@property(nonatomic, retain) AgendaTechServiceConfiguration *configuration;
-@property(nonatomic, retain) NSObject<AgendaTechServiceDelegate> *delegate;
+@property(nonatomic, retain) NSObject<AgendaTechClient> *delegate;
+@property(nonatomic, retain) NSURL *url;
+@property(nonatomic, retain) NSString *eventosResource;
 
--(id)initWithConfiguration:(AgendaTechServiceConfiguration *)configuration;
-
--(void)eventos;
+-(void)loadAllEvents;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  AgendaTech.h
+//  ClientMock.h
 //  iAgendaTech
 //
 //  Created by Ricardo on 2/23/11.
@@ -7,12 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AgendaTechService.h"
-#import "AgendaTechClient.h"
-#import "Evento.h"
+#import "AgendaTech.h"
 
-@interface AgendaTech : NSObject {
-
+@interface ClientMock : NSObject<AgendaTechClient> {
 }
+
+@property(nonatomic) BOOL didLoadEventsCalled;
 
 @end
