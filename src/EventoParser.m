@@ -28,9 +28,16 @@
 }
 
 -(Evento *) createEventoFromDicitionary:(NSDictionary *)eventoDic {
-	Evento *evento = [[[Evento alloc] init] autorelease];
-	evento.nome = [eventoDic objectForKey:@"nome"];
-	evento.data = [self parseDateFromString:[eventoDic objectForKey:@"data"]];
+	Evento *evento		= [[[Evento alloc] init] autorelease];
+	evento.nome			= [eventoDic objectForKey:@"nome"];
+	evento.estado		= [eventoDic objectForKey:@"estado"];
+	evento.data			= [self parseDateFromString:[eventoDic objectForKey:@"data"]];
+	evento.dataTermino	= [self parseDateFromString:[eventoDic objectForKey:@"data_termino"]];
+	evento.descricao	= [eventoDic objectForKey:@"descricao"];
+	evento.site			= [NSURL URLWithString:[eventoDic objectForKey:@"site"]];
+	evento.logo			= [eventoDic objectForKey:@"logo_file_name"];
+	evento.niceURL = [eventoDic objectForKey:@"cached_slug"];
+
 	return evento;
 }
 

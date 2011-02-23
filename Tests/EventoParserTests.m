@@ -49,13 +49,21 @@
 
 - (void) test_should_create_an_evento_from_a_valid_json {
 	Evento *evento = [[Evento alloc] init];
-	evento.data = [[NSDate alloc] initWithString:@"2011-02-22 00:00:00 -0300"];
-	evento.nome = @"I Encontro de Inovação em TI da Faculdade Pitágoras";
+	
+	evento.nome			= @"I Encontro de Inovação em TI da Faculdade Pitágoras";
+	evento.estado		= @"MG";
+	evento.data			= [[NSDate alloc] initWithString:@"2011-02-22 00:00:00 -0300"];
+	evento.dataTermino	= [[NSDate alloc] initWithString:@"2011-02-22 00:00:00 -0300"];
+	evento.descricao	= @"<p>Conhe&ccedil;a as tend&ecirc;ncias do mundo da TI com quem mais entendo do assunto.</p>";
+	evento.site			= [NSURL URLWithString:@"http://www.faculdadepitagoras.com.br/BeloHorizonte/aunidade/Paginas/Eventos.aspx"];
+	evento.logo			= @"faculdade-pitagoras-logo.jpg";
+	evento.niceURL		= @"i-encontro-de-inovacao-em-ti-da-faculdade-pitagoras";
 	
 	EventoParser *parser = [[EventoParser alloc] init];
 	Evento *parsed = [parser parse:json error:nil];
 	
-	STAssertTrue([evento isEqual:parsed], @"The parsed Evento is not equals the manually created one.");
+	NSString *errorMsg = [NSString stringWithFormat:@"The parsed Evento is not like the manually created one. %@, %@", parsed, evento];
+	STAssertTrue([evento isEqual:parsed], errorMsg);
 }
 
 @end
