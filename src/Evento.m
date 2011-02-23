@@ -11,13 +11,18 @@
 
 @implementation Evento
 
-@synthesize data;
+@synthesize data, nome;
 
 - (id) init {
 	if (self = [super init]) {
 		self.data = [NSDate date];
 	}
 	return self;
+}
+
+- (NSString *)description {
+	return [NSString stringWithFormat:@"%@ - %@",
+			self.nome, self.data];
 }
 
 @end

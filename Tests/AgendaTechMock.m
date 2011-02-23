@@ -13,15 +13,9 @@
 
 @synthesize responseReceived;
 
--(void)responseReceived:(NSString *)response
-{
+-(void)responseReceived:(NSString *)response {
 	responseReceived = YES;
-}
-
--(void)requestAllEvents
-{
-	Evento *e = [[Evento alloc] init];
-	[self.delegate didLoadEvents:[NSArray arrayWithObject:e]];
+	[super responseReceived:response];
 }
 
 @end

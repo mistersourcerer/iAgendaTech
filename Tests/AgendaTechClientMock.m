@@ -13,14 +13,12 @@
 
 @synthesize eventos;
 
--(void)didLoadEvents:(NSArray *)events
-{
+-(void)didLoadEvents:(NSArray *)events {
 	self.eventos = events;
 }
 
--(void)release
-{
-	[eventos release];
+-(void)dealloc {
+	[super dealloc];
 }
 
 @end

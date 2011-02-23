@@ -14,5 +14,6 @@
 }
 
 @property(nonatomic, retain) NSDate *data;
+@property(nonatomic, retain) NSString *nome;
 
 @end
