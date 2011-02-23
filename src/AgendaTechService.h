@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "AgendaTechClient.h"
+#import "AgendaTechServiceDelegate.h"
 
-@protocol AgendaTechService
+@protocol AgendaTechService<AgendaTechServiceDelegate>
 
 @property(nonatomic, retain) NSObject<AgendaTechClient> *delegate;
 @property(nonatomic, retain) NSURL *url;

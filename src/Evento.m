@@ -13,4 +13,9 @@
 
 @synthesize data;
 
+-(BOOL)isEqual:(id)object {
+	Evento *e = (Evento *)object;
+	return [e.data isEqual:self.data];
+}
+
 @end

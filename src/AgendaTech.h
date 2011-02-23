@@ -10,6 +10,7 @@
 #import "AgendaTechService.h"
 #import "AgendaTechClient.h"
 #import "Evento.h"
+#import "EventoParser.h"
 
 @interface AgendaTech : NSObject {
 

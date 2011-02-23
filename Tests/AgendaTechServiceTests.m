@@ -48,9 +48,9 @@
 - (void) test_should_request_eventos_from_remote_server {
 	[service loadAllEvents];
 	
-	NSString *eventosUrl = [[service.url absoluteString] stringByAppendingString:service.eventosResource];
-	BOOL isLastUrlCalledEqualsEventosUrl = [service.lastCalledUrl isEqual:eventosUrl];
-	NSString *errorMsg = [NSString stringWithFormat:@"Service need to call %@ but called: %@", eventosUrl, service.lastCalledUrl];
+	NSURL *u = [service.url URLByAppendingPathExtension:service.eventosResource];
+	BOOL isLastUrlCalledEqualsEventosUrl = [service.lastCalledUrl isEqual:[u absoluteString]];
+	NSString *errorMsg = [NSString stringWithFormat:@"Service need to call %@ but called: %@", [u absoluteString], service.lastCalledUrl];
 	STAssertTrue(isLastUrlCalledEqualsEventosUrl, errorMsg);
 }
 
