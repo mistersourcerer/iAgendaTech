@@ -15,7 +15,7 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		8C13903B13159D410059A716 /* Evento.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C13903A13159D410059A716 /* Evento.m */; };
 		8C13903C13159D410059A716 /* Evento.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C13903A13159D410059A716 /* Evento.m */; };
-		8C1390811315A20B0059A716 /* ParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1390801315A20B0059A716 /* ParserTests.m */; };
+		8C1390811315A20B0059A716 /* EventoParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1390801315A20B0059A716 /* EventoParserTests.m */; };
 		8C13908A1315A3AF0059A716 /* EventoParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1390891315A3AF0059A716 /* EventoParser.m */; };
 		8C13908B1315A3AF0059A716 /* EventoParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1390891315A3AF0059A716 /* EventoParser.m */; };
 		8C5E0F171312ACB4003196F9 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5E0F0A1312ACB4003196F9 /* GTMIPhoneUnitTestDelegate.m */; };
@@ -70,7 +70,7 @@
 		8C13903913159D410059A716 /* Evento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Evento.h; sourceTree = "<group>"; };
 		8C13903A13159D410059A716 /* Evento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Evento.m; sourceTree = "<group>"; };
 		8C13906E1315A14A0059A716 /* AgendaTechServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaTechServiceDelegate.h; sourceTree = "<group>"; };
-		8C1390801315A20B0059A716 /* ParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserTests.m; sourceTree = "<group>"; };
+		8C1390801315A20B0059A716 /* EventoParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventoParserTests.m; sourceTree = "<group>"; };
 		8C1390881315A3AF0059A716 /* EventoParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventoParser.h; sourceTree = "<group>"; };
 		8C1390891315A3AF0059A716 /* EventoParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventoParser.m; sourceTree = "<group>"; };
 		8C5E0EEC1312AC39003196F9 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,7 +239,7 @@
 				8C5E0FA01312B54D003196F9 /* Mocks */,
 				8C5E0F271312AE45003196F9 /* _GTMTest.m */,
 				8CEAA79C131594EB00C2370B /* AgendaTechServiceTests.m */,
-				8C1390801315A20B0059A716 /* ParserTests.m */,
+				8C1390801315A20B0059A716 /* EventoParserTests.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -459,7 +459,7 @@
 				8CEAA75A131592BA00C2370B /* ServiceMock.m in Sources */,
 				8CEAA79D131594EB00C2370B /* AgendaTechServiceTests.m in Sources */,
 				8C13903B13159D410059A716 /* Evento.m in Sources */,
-				8C1390811315A20B0059A716 /* ParserTests.m in Sources */,
+				8C1390811315A20B0059A716 /* EventoParserTests.m in Sources */,
 				8C13908A1315A3AF0059A716 /* EventoParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
