@@ -29,6 +29,7 @@
 
 -(Evento *) createEventoFromDicitionary:(NSDictionary *)eventoDic {
 	Evento *evento = [[[Evento alloc] init] autorelease];
+	evento.nome = [eventoDic objectForKey:@"nome"];
 	evento.data = [self parseDateFromString:[eventoDic objectForKey:@"data"]];
 	return evento;
 }

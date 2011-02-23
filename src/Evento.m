@@ -11,11 +11,15 @@
 
 @implementation Evento
 
-@synthesize data;
+@synthesize nome, estado, data, dataTermino, descricao, site, logo, niceURL;
 
 -(BOOL)isEqual:(id)object {
 	Evento *e = (Evento *)object;
-	return [e.data isEqual:self.data];
+	BOOL dataEq = [e.data isEqual:self.data];
+	BOOL nomeEq = [e.nome isEqual:self.nome];
+	
+	BOOL isEqual = dataEq && nomeEq;
+	return isEqual;
 }
 
 @end
