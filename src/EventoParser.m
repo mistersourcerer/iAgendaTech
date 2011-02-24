@@ -48,4 +48,15 @@
 	return [self createEventoFromDicitionary:eventoDic];
 }
 
+-(NSArray *) parseJsonArray:(NSString *)json error:(NSError **)error {
+	SBJsonParser *parser = [[SBJsonParser alloc] init];
+	NSArray *jsonArray = [parser objectWithString:json error:error];
+	NSMutableArray *eventos = [NSMutableArray arrayWithCapacity:[jsonArray count]];
+	for (NSDictionary *wrapperDic in jsonArray) {
+		NSDictionary *eventoDic = [wrapperDic objectForKey:@"evento"];
+		[eventos addObject:[self createEventoFromDicitionary:eventoDic]];
+	}
+	return [NSArray arrayWithArray:eventos];
+}
+
 @end

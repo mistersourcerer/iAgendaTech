@@ -15,5 +15,6 @@
 }
 
 -(Evento *) parse:(NSString *)json error:(NSError **)error;
+-(NSArray *) parseJsonArray:(NSString *)json error:(NSError **)error;
 
 @end

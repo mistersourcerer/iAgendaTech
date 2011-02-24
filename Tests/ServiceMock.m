@@ -7,6 +7,7 @@
 //
 
 #import "ServiceMock.h"
+#import "EventoParser.h"
 
 
 @implementation ServiceMock
@@ -14,9 +15,13 @@
 @synthesize delegate, eventosResource, lastCalledUrl, url;
 
 -(void)responseReceived:(NSString *)response {
-	
-	Evento *evento = [[[Evento alloc] init] autorelease];
-	[delegate didLoadEvents:[NSArray arrayWithObject:evento]];
+	EventoParser *parser = [[EventoParser alloc] init];
+	NSError *error = nil;
+	NSArray *eventos = [parser parseJsonArray:response error:&error];
+	if (error == nil) {
+		[delegate didLoadEvents:eventos];
+	}
+	[parser release];
 }
 
 -(void)requestUrl:(NSURL *)requestUrl {
