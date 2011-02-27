@@ -10,7 +10,7 @@
 #import "AgendaTechService.h"
 
 @interface RemoteSerivce : NSObject<AgendaTechService> {
-
+	NSMutableData *receivedData;
 }
 
 @end
