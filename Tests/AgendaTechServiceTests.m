@@ -39,7 +39,7 @@
 
 - (void) test_should_send_an_array_to_client_using_the_delegate_method {
 	BOOL isWithoutEvents = [client.eventos count] == 0;
-	STAssertTrue(isWithoutEvents, @"Humm, should be eventoless until call service#loadAllEvents");
+	STAssertTrue(isWithoutEvents, @"Humm, should be eventoless XD until call service#loadAllEvents");
 	[service loadAllEvents];
 	
 	BOOL isWithEvents = [client.eventos count] > 0;
