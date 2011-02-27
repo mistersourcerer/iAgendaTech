@@ -202,6 +202,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8C018F3D131ABD17008C175A /* iAgendaTech */ = {
+			isa = PBXGroup;
+			children = (
+				8CEAA79C131594EB00C2370B /* AgendaTechServiceTests.m */,
+				8C1390801315A20B0059A716 /* EventoParserTests.m */,
+			);
+			name = iAgendaTech;
+			sourceTree = "<group>";
+		};
 		8C13903813159D320059A716 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,12 +246,11 @@
 		8C5E0EE71312AC08003196F9 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				8C018F3D131ABD17008C175A /* iAgendaTech */,
 				8CEAA0B8131442A800C2370B /* fixtures */,
 				8C5E0F071312ACB4003196F9 /* GTM */,
 				8C5E0FA01312B54D003196F9 /* Mocks */,
 				8C5E0F271312AE45003196F9 /* _GTMTest.m */,
-				8CEAA79C131594EB00C2370B /* AgendaTechServiceTests.m */,
-				8C1390801315A20B0059A716 /* EventoParserTests.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
