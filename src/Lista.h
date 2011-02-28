@@ -12,7 +12,7 @@
 
 @class TableViewDataSource;
 
-@interface Lista : UIViewController<AgendaTechClient, TableViewCellConfigurator> {
+@interface Lista : UIViewController<AgendaTechClient, TableViewCellConfigurator, UITableViewDelegate> {
 	NSObject<AgendaTechService> *service;
 }
 

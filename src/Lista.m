@@ -10,6 +10,7 @@
 #import "Lista.h"
 #import "TableViewDataSource.h"
 #import "RemoteSerivce.h"
+#import "Detail.h"
 
 @implementation Lista
 
@@ -17,6 +18,7 @@
 
 #pragma mark -
 -(void)viewDidLoad {
+	table.delegate = self;
 	service = [[RemoteSerivce alloc] init];
 	service.delegate = self;
 	[service loadAllEvents];
@@ -41,6 +43,14 @@
 		cell.textLabel.text = evento.nome;
 	}
 	return cell;
+}
+
+#pragma mark -
+#pragma mark UITableViewDelegate implementation
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	Detail *detail = [[Detail alloc] init];
+	[self.navigationController pushViewController:detail animated:YES];
+	[detail release];
 }
 
 #pragma mark -
