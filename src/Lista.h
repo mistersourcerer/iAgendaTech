@@ -10,10 +10,11 @@
 #import "AgendaTechClient.h"
 #import "TableViewCellConfigurator.h"
 
-@class TableViewDataSource;
+@class TableViewDataSource, Detail;
 
 @interface Lista : UIViewController<AgendaTechClient, TableViewCellConfigurator, UITableViewDelegate> {
 	NSObject<AgendaTechService> *service;
+	Detail *detailController;
 }
 
 @property(nonatomic, retain) IBOutlet UITableView *table;

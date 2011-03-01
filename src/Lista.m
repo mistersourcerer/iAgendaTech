@@ -48,14 +48,22 @@
 #pragma mark -
 #pragma mark UITableViewDelegate implementation
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	Detail *detail = [[Detail alloc] init];
-	[self.navigationController pushViewController:detail animated:YES];
-	[detail release];
+	Evento *evento = [self.eventos objectAtIndex:indexPath.row];
+	
+	if(detailController == nil) {
+		detailController = [[Detail alloc] initWithEvento:evento];
+		[detailController retain];
+	} else {
+		detailController.evento = evento;
+	}
+
+	[self.navigationController pushViewController:detailController animated:YES];
 }
 
 #pragma mark -
 -(void) dealloc {
 	self.eventos = nil;
+	[detailController release];
 	[super dealloc];
 }
 

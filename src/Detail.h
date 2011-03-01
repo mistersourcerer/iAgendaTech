@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+@class Evento;
 
 @interface Detail : UIViewController {
-
 }
+
+@property(nonatomic, retain) IBOutlet UILabel *descricao;
+@property(nonatomic, retain) Evento *evento;
+
+-(id)initWithEvento:(Evento *)evento;
 
 @end
