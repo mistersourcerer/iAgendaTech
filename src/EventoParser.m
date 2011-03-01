@@ -13,7 +13,7 @@
 @implementation EventoParser
 
 -(NSDate *) parseDateFromString:(NSString *)date {
-	// Removing de : from timezone
+	// Removing the ':' from timezone
 	NSMutableString *stringDate = [NSMutableString string];
 	[stringDate appendString:[date substringToIndex:22]];
 	[stringDate appendString:[date substringFromIndex:23]];
@@ -24,17 +24,17 @@
 	[formatter release];
 	
 	return formattedDate;
-	
 }
 
 -(void)parseLogoFromDic:(NSDictionary *)eventoDic onEvento:(Evento *)evento {
 	evento.logo	= [eventoDic objectForKey:@"logo_file_name"];
 	if (evento.logo != nil && ![evento.logo isKindOfClass:[NSNull class]] && [evento.logo length] > 0) {
 		evento.logoFileSize = [NSNumber numberWithInt:[[eventoDic objectForKey:@"logo_file_size"] intValue]];
+		NSString *amazonURL = @"http://s3.amazonaws.com/agendatech_logos/thumb";
+		evento.logoURL = [amazonURL stringByAppendingPathComponent:evento.logo];
 	} else {
 		evento.logo = nil;
 	}
-
 }
 
 -(Evento *) createEventoFromDicitionary:(NSDictionary *)eventoDic {

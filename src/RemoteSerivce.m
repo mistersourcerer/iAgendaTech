@@ -16,6 +16,7 @@
 	if (self = [super init]) {
 		self.url = [NSURL URLWithString:@"http://www.agendatech.com.br"];
 		self.eventosResource = @"/mobile/eventos";
+		self.niceUrlResource = @"/eventos/tecnologia";
 		receivedData = [[NSMutableData data] retain];
 	}
 	return self;
@@ -23,7 +24,7 @@
 
 #pragma mark -
 #pragma mark AgendaTechService implementation
-@synthesize delegate, eventosResource, url;
+@synthesize delegate, eventosResource, url, niceUrlResource;
 
 -(void)responseReceived:(NSString *)response {
 	EventoParser *parser = [[EventoParser alloc] init];

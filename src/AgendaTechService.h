@@ -15,6 +15,7 @@
 @property(nonatomic, retain) NSObject<AgendaTechClient> *delegate;
 @property(nonatomic, retain) NSURL *url;
 @property(nonatomic, retain) NSString *eventosResource;
+@property(nonatomic, retain) NSString *niceUrlResource;
 
 -(void)loadAllEvents;
 

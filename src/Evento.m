@@ -13,6 +13,8 @@
 
 @synthesize nome, estado, data, dataTermino, descricao, site, logo, logoFileSize, niceURL;
 
+@synthesize logoURL;
+
 - (NSString *)description {
 	return [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@ %@ %@",
 			[self.data description],
