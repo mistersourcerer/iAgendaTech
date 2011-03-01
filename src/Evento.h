@@ -20,6 +20,7 @@
 @property(nonatomic, retain) NSString *descricao;
 @property(nonatomic, retain) NSURL *site;
 @property(nonatomic, retain) NSString *logo;
+@property(nonatomic, retain) NSNumber *logoFileSize;
 @property(nonatomic, retain) NSString *niceURL;
 
 @end

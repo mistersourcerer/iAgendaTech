@@ -11,7 +11,7 @@
 
 @implementation Evento
 
-@synthesize nome, estado, data, dataTermino, descricao, site, logo, niceURL;
+@synthesize nome, estado, data, dataTermino, descricao, site, logo, logoFileSize, niceURL;
 
 - (NSString *)description {
 	return [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@ %@ %@",
@@ -38,9 +38,10 @@
 	BOOL descEq = [e.descricao isEqual:self.descricao];
 	BOOL siteEq = [e.site isEqual:self.site];
 	BOOL logoEq = [e.logo isEqual:self.logo];
+	BOOL loSzEq = [e.logoFileSize isEqual:self.logoFileSize];
 	BOOL nurlEq = [e.niceURL isEqual:self.niceURL];
 
-	BOOL isEqual = dataEq && nomeEq && estaEq && termEq && descEq && siteEq && logoEq && nurlEq;
+	BOOL isEqual = dataEq && nomeEq && estaEq && termEq && descEq && siteEq && logoEq && loSzEq && nurlEq;
 	return isEqual;
 }
 

@@ -9,7 +9,6 @@
 #import "Detail.h"
 #import "AgendaTech.h"
 
-
 @implementation Detail
 
 @synthesize evento;

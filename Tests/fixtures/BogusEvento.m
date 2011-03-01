@@ -19,6 +19,7 @@
 		self.descricao		= @"<p>Conhe&ccedil;a as tend&ecirc;ncias do mundo da TI com quem mais entendo do assunto.</p>";
 		self.site			= [NSURL URLWithString:@"http://www.faculdadepitagoras.com.br/BeloHorizonte/aunidade/Paginas/Eventos.aspx"];
 		self.logo			= @"faculdade-pitagoras-logo.jpg";
+		self.logoFileSize	= [NSNumber numberWithInt:53783];
 		self.niceURL		= @"i-encontro-de-inovacao-em-ti-da-faculdade-pitagoras";
 	}
 	return self;

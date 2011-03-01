@@ -27,17 +27,28 @@
 	
 }
 
+-(void)parseLogoFromDic:(NSDictionary *)eventoDic onEvento:(Evento *)evento {
+	evento.logo	= [eventoDic objectForKey:@"logo_file_name"];
+	if (evento.logo != nil && ![evento.logo isKindOfClass:[NSNull class]] && [evento.logo length] > 0) {
+		evento.logoFileSize = [NSNumber numberWithInt:[[eventoDic objectForKey:@"logo_file_size"] intValue]];
+	} else {
+		evento.logo = nil;
+	}
+
+}
+
 -(Evento *) createEventoFromDicitionary:(NSDictionary *)eventoDic {
 	Evento *evento		= [[[Evento alloc] init] autorelease];
 	evento.nome			= [eventoDic objectForKey:@"nome"];
 	evento.estado		= [eventoDic objectForKey:@"estado"];
-	evento.data			= [self parseDateFromString:[eventoDic objectForKey:@"data"]];
-	evento.dataTermino	= [self parseDateFromString:[eventoDic objectForKey:@"data_termino"]];
 	evento.descricao	= [eventoDic objectForKey:@"descricao"];
 	evento.site			= [NSURL URLWithString:[eventoDic objectForKey:@"site"]];
-	evento.logo			= [eventoDic objectForKey:@"logo_file_name"];
-	evento.niceURL = [eventoDic objectForKey:@"cached_slug"];
+	evento.niceURL		= [eventoDic objectForKey:@"cached_slug"];
 
+	evento.data			= [self parseDateFromString:[eventoDic objectForKey:@"data"]];
+	evento.dataTermino	= [self parseDateFromString:[eventoDic objectForKey:@"data_termino"]];
+	[self parseLogoFromDic:eventoDic onEvento:evento];
+	
 	return evento;
 }
 
