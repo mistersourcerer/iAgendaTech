@@ -41,7 +41,7 @@
 	Evento *evento		= [[[Evento alloc] init] autorelease];
 	evento.nome			= [eventoDic objectForKey:@"nome"];
 	evento.estado		= [eventoDic objectForKey:@"estado"];
-	evento.descricao	= [eventoDic objectForKey:@"descricao"];
+	evento.descricao	= [[eventoDic objectForKey:@"descricao"] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 	evento.site			= [NSURL URLWithString:[eventoDic objectForKey:@"site"]];
 	evento.niceURL		= [eventoDic objectForKey:@"cached_slug"];
 

@@ -12,7 +12,7 @@
 
 @implementation ServiceMock
 
-@synthesize delegate, eventosResource, lastCalledUrl, url;
+@synthesize delegate, eventosResource, lastCalledUrl, url, niceUrlResource;
 
 -(void)responseReceived:(NSString *)response {
 	EventoParser *parser = [[EventoParser alloc] init];

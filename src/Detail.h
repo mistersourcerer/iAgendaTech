@@ -10,10 +10,15 @@
 
 @class Evento;
 
-@interface Detail : UIViewController {
+@interface Detail : UIViewController<UIWebViewDelegate> {
 }
 
-@property(nonatomic, retain) IBOutlet UILabel *descricao;
+@property(nonatomic, retain) IBOutlet UIWebView *descricaoHTML;
+@property(nonatomic, retain) IBOutlet UILabel *titulo;
+@property(nonatomic, retain) IBOutlet UILabel *dataInicio;
+@property(nonatomic, retain) IBOutlet UILabel *dataFim;
+@property(nonatomic, retain) IBOutlet UILabel *tags;
+		  
 @property(nonatomic, retain) Evento *evento;
 
 -(id)initWithEvento:(Evento *)evento;

@@ -12,23 +12,35 @@
 @implementation Detail
 
 @synthesize evento;
-@synthesize descricao;
+@synthesize descricaoHTML, titulo, dataInicio, dataFim, tags;
 
 -(void)configureScrollSize {
 	UIScrollView *scroll = (UIScrollView *)self.view;
-	float scrollHeight = (self.view.frame.size.height + descricao.frame.size.height) - 110;
+	float scrollHeight = (self.view.frame.size.height + descricaoHTML.frame.size.height) - 160;
 	scroll.contentSize = CGSizeMake(scroll.contentSize.width, scrollHeight);
 }
 
 -(void)configureDescricao:(NSString *)desc {
-	CGSize labelSize = [desc sizeWithFont:descricao.font
-						constrainedToSize:CGSizeMake(descricao.frame.size.width, 9999) 
-							lineBreakMode:descricao.lineBreakMode];
+	NSString *html = [NSString stringWithFormat:@"<html><body><div id='iagendatech_descricao_'>%@</div></body></html>", desc];
 	
-	CGRect frame = descricao.frame;
-	frame.size.height = labelSize.height;
-	descricao.frame = frame;
-	descricao.text = desc;
+	descricaoHTML.delegate = self;
+	[descricaoHTML loadHTMLString:html baseURL:nil];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    NSString *offsetHeightString = [descricaoHTML stringByEvaluatingJavaScriptFromString:@"document.getElementById(\"iagendatech_descricao_\").offsetHeight;"];
+	
+	int offsetHeight = [offsetHeightString intValue];
+	if (offsetHeight == 0) {
+		offsetHeight = 140;
+	}
+	
+	CGRect frame = descricaoHTML.frame;
+	frame.size.height = offsetHeight + 50;
+	descricaoHTML.frame = frame;
+	
+	[self configureScrollSize];
 }
 
 #pragma mark -
@@ -41,7 +53,7 @@
 
 -(void)viewDidAppear:(BOOL)animated {
 	[self configureDescricao:evento.descricao];
-	[self configureScrollSize];
+	self.titulo.text	= evento.nome;
 }
 
 #pragma mark -
