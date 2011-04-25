@@ -17,7 +17,7 @@
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
 		8CBCE14513661D0600677AD6 /* libUISpec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBCE14213661C8E00677AD6 /* libUISpec.a */; };
 		8CBCE15113661DE700677AD6 /* UISpec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CBCE15013661DE700677AD6 /* UISpec.bundle */; };
-		8CBCE1631366240C00677AD6 /* HelloWorldUISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBCE1621366240C00677AD6 /* HelloWorldUISpec.m */; };
+		8CBCE22C13662EB600677AD6 /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBCE22B13662EB600677AD6 /* HelloWorld.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,6 @@
 		32CA4F630368D1EE00C91783 /* iAgendaTech_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAgendaTech_Prefix.pch; sourceTree = "<group>"; };
 		8CBCE13813661C8E00677AD6 /* UISpec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UISpec.xcodeproj; path = ../Vendor/UISpec/xcode/UISpec/UISpec.xcodeproj; sourceTree = SOURCE_ROOT; };
 		8CBCE15013661DE700677AD6 /* UISpec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UISpec.bundle; path = ../Vendor/UISpec/src/UISpec.bundle; sourceTree = SOURCE_ROOT; };
-		8CBCE1621366240C00677AD6 /* HelloWorldUISpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldUISpec.m; sourceTree = "<group>"; };
 		8CBCE1D51366280300677AD6 /* CallCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallCache.h; path = ../Vendor/UISpec/headers/CallCache.h; sourceTree = SOURCE_ROOT; };
 		8CBCE1D61366280300677AD6 /* NSNumberCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSNumberCreator.h; path = ../Vendor/UISpec/headers/NSNumberCreator.h; sourceTree = SOURCE_ROOT; };
 		8CBCE1D71366280300677AD6 /* Recordable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recordable.h; path = ../Vendor/UISpec/headers/Recordable.h; sourceTree = SOURCE_ROOT; };
@@ -89,6 +88,7 @@
 		8CBCE1F01366280300677AD6 /* UISpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UISpec.h; path = ../Vendor/UISpec/headers/UISpec.h; sourceTree = SOURCE_ROOT; };
 		8CBCE1F11366280300677AD6 /* ViewFilterSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewFilterSwizzler.h; path = ../Vendor/UISpec/headers/ViewFilterSwizzler.h; sourceTree = SOURCE_ROOT; };
 		8CBCE1F21366280300677AD6 /* WaitUntilIdle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaitUntilIdle.h; path = ../Vendor/UISpec/headers/WaitUntilIdle.h; sourceTree = SOURCE_ROOT; };
+		8CBCE22B13662EB600677AD6 /* HelloWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorld.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* iAgendaTech-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iAgendaTech-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,7 +183,7 @@
 		8CBCE15E136621D500677AD6 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				8CBCE1621366240C00677AD6 /* HelloWorldUISpec.m */,
+				8CBCE22B13662EB600677AD6 /* HelloWorld.m */,
 			);
 			name = Specs;
 			path = ../Specs;
@@ -325,7 +325,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* iAgendaTechAppDelegate.m in Sources */,
 				28193060112F816700ECF9B4 /* iAgendaTech.xcdatamodeld in Sources */,
-				8CBCE1631366240C00677AD6 /* HelloWorldUISpec.m in Sources */,
+				8CBCE22C13662EB600677AD6 /* HelloWorld.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
