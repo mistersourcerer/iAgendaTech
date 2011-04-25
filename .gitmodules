@@ -1,0 +1,3 @@
+[submodule "Vendor/UISpec"]
+	path = Vendor/UISpec
+	url = https://github.com/twotoasters/UISpec.git
