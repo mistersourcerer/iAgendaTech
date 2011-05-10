@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* iAgendaTechAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* iAgendaTechAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -15,9 +14,10 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
+		8C5D5F5C1379E06D00A90B6B /* DescribeAgendaTech.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D5F5B1379E06D00A90B6B /* DescribeAgendaTech.m */; };
+		8C5D5FF11379E92700A90B6B /* iAgendaTechAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D5FF01379E92700A90B6B /* iAgendaTechAppDelegate.m */; };
 		8CBCE14513661D0600677AD6 /* libUISpec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBCE14213661C8E00677AD6 /* libUISpec.a */; };
 		8CBCE15113661DE700677AD6 /* UISpec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CBCE15013661DE700677AD6 /* UISpec.bundle */; };
-		8CBCE22C13662EB600677AD6 /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBCE22B13662EB600677AD6 /* HelloWorld.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,29 +25,27 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 8CBCE13813661C8E00677AD6 /* UISpec.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = C76EB5D20F74586B00EF8398 /* libUISpec.a */;
+			remoteGlobalIDString = C76EB5D20F74586B00EF8398;
 			remoteInfo = UISpec;
 		};
 		8CBCE14313661C8E00677AD6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8CBCE13813661C8E00677AD6 /* UISpec.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = C7D4F29310BDA39C00B00019 /* Specs.app */;
+			remoteGlobalIDString = C7D4F29310BDA39C00B00019;
 			remoteInfo = Specs;
 		};
 		8CBCE14B13661D4D00677AD6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8CBCE13813661C8E00677AD6 /* UISpec.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = C76EB5D10F74586B00EF8398 /* UISpec */;
+			remoteGlobalIDString = C76EB5D10F74586B00EF8398;
 			remoteInfo = UISpec;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* iAgendaTechAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAgendaTechAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* iAgendaTechAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iAgendaTechAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* iAgendaTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAgendaTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +54,9 @@
 		28D801B30F44B63D00FB423F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* iAgendaTech_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAgendaTech_Prefix.pch; sourceTree = "<group>"; };
+		8C5D5F5B1379E06D00A90B6B /* DescribeAgendaTech.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescribeAgendaTech.m; sourceTree = "<group>"; };
+		8C5D5FEF1379E92700A90B6B /* iAgendaTechAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iAgendaTechAppDelegate.h; sourceTree = "<group>"; };
+		8C5D5FF01379E92700A90B6B /* iAgendaTechAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iAgendaTechAppDelegate.m; sourceTree = "<group>"; };
 		8CBCE13813661C8E00677AD6 /* UISpec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UISpec.xcodeproj; path = ../Vendor/UISpec/xcode/UISpec/UISpec.xcodeproj; sourceTree = SOURCE_ROOT; };
 		8CBCE15013661DE700677AD6 /* UISpec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UISpec.bundle; path = ../Vendor/UISpec/src/UISpec.bundle; sourceTree = SOURCE_ROOT; };
 		8CBCE1D51366280300677AD6 /* CallCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallCache.h; path = ../Vendor/UISpec/headers/CallCache.h; sourceTree = SOURCE_ROOT; };
@@ -88,7 +89,6 @@
 		8CBCE1F01366280300677AD6 /* UISpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UISpec.h; path = ../Vendor/UISpec/headers/UISpec.h; sourceTree = SOURCE_ROOT; };
 		8CBCE1F11366280300677AD6 /* ViewFilterSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewFilterSwizzler.h; path = ../Vendor/UISpec/headers/ViewFilterSwizzler.h; sourceTree = SOURCE_ROOT; };
 		8CBCE1F21366280300677AD6 /* WaitUntilIdle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaitUntilIdle.h; path = ../Vendor/UISpec/headers/WaitUntilIdle.h; sourceTree = SOURCE_ROOT; };
-		8CBCE22B13662EB600677AD6 /* HelloWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorld.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* iAgendaTech-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iAgendaTech-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,15 +108,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				1D3623240D0F684500981E51 /* iAgendaTechAppDelegate.h */,
-				1D3623250D0F684500981E51 /* iAgendaTechAppDelegate.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,11 +119,12 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				8CBCE16A1366247D00677AD6 /* lib */,
+				8C5D5FDF1379E89800A90B6B /* Src */,
+				8C5D5FFA1379E95F00A90B6B /* View */,
+				8CBCE16A1366247D00677AD6 /* Lib */,
 				8CBCE15E136621D500677AD6 /* Specs */,
 				8CBCE15013661DE700677AD6 /* UISpec.bundle */,
 				8CBCE13813661C8E00677AD6 /* UISpec.xcodeproj */,
-				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -171,6 +163,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8C5D5FDF1379E89800A90B6B /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				8C5D5FE11379E8D100A90B6B /* Application */,
+			);
+			name = Src;
+			path = ../src;
+			sourceTree = "<group>";
+		};
+		8C5D5FE11379E8D100A90B6B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8C5D60071379EAEA00A90B6B /* Controller */,
+				8C5D5FEF1379E92700A90B6B /* iAgendaTechAppDelegate.h */,
+				8C5D5FF01379E92700A90B6B /* iAgendaTechAppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		8C5D5FFA1379E95F00A90B6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = ../view/pt_BR.lproj;
+			sourceTree = "<group>";
+		};
+		8C5D60071379EAEA00A90B6B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		8CBCE13913661C8E00677AD6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,18 +209,18 @@
 		8CBCE15E136621D500677AD6 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				8CBCE22B13662EB600677AD6 /* HelloWorld.m */,
+				8C5D5F5B1379E06D00A90B6B /* DescribeAgendaTech.m */,
 			);
 			name = Specs;
 			path = ../Specs;
 			sourceTree = "<group>";
 		};
-		8CBCE16A1366247D00677AD6 /* lib */ = {
+		8CBCE16A1366247D00677AD6 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
 				8CBCE1D4136627F200677AD6 /* UISpec */,
 			);
-			name = lib;
+			name = Lib;
 			sourceTree = "<group>";
 		};
 		8CBCE1D4136627F200677AD6 /* UISpec */ = {
@@ -272,6 +298,7 @@
 				Japanese,
 				French,
 				German,
+				pt_BR,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -323,9 +350,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* iAgendaTechAppDelegate.m in Sources */,
 				28193060112F816700ECF9B4 /* iAgendaTech.xcdatamodeld in Sources */,
-				8CBCE22C13662EB600677AD6 /* HelloWorld.m in Sources */,
+				8C5D5F5C1379E06D00A90B6B /* DescribeAgendaTech.m in Sources */,
+				8C5D5FF11379E92700A90B6B /* iAgendaTechAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
