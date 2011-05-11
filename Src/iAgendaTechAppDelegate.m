@@ -8,7 +8,6 @@
 
 #import "iAgendaTechAppDelegate.h"
 
-
 @implementation iAgendaTechAppDelegate
 
 @synthesize window, navigation;
@@ -17,8 +16,8 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
 	[self.window addSubview:navigation.view];
 	
     [self.window makeKeyAndVisible];
