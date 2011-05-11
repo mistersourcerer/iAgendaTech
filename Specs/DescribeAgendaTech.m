@@ -10,6 +10,7 @@
 
 - (void) before {
 	app = [[UIQuery withApplication] retain];
+	app.timeout = 2;
 }
 
 - (void) after {
@@ -18,6 +19,12 @@
 
 - (void) itShouldShowWelcomeScreen {
 	[[app.label text:@"agendatech"] should].exist;
+}
+
+- (void) itShouldAssyncLoadTheMainEvents {
+	UIQuery *tableView = app.tableView;
+	int rows = [[tableView dataSource] tableView:tableView numberOfRowsInSection:0];
+	[tableView.should have:be(1)];
 }
 
 @end
