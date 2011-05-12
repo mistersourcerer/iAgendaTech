@@ -571,12 +571,17 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iAgendaTech_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = RUN_SPECS;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../Vendor/OCMock/Headers/OCMock";
 				INFOPLIST_FILE = "iAgendaTech-Info Specs.plist";
 				INFOPLIST_PREPROCESSOR_DEFINITIONS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../Vendor/OCMock\"",
+					"\"$(PROJECT_DIR)/../Vendor/OCMock\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"$(PROJECT_DIR)/../Vendor/OCMock/libOCMock.a",
 				);
 				PRODUCT_NAME = iAgendaTechSpecs;
 			};
@@ -590,12 +595,17 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iAgendaTech_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = RUN_SPECS;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../Vendor/OCMock/Headers/OCMock";
 				INFOPLIST_FILE = "iAgendaTech-Info Specs.plist";
 				INFOPLIST_PREPROCESSOR_DEFINITIONS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../Vendor/OCMock\"",
+					"\"$(PROJECT_DIR)/../Vendor/OCMock\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"$(PROJECT_DIR)/../Vendor/OCMock/libOCMock.a",
 				);
 				PRODUCT_NAME = iAgendaTechSpecs;
 				VALIDATE_PRODUCT = YES;
