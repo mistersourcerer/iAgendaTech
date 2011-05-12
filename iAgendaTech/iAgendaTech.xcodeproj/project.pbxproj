@@ -14,7 +14,6 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
-		8C5D5F5C1379E06D00A90B6B /* DescribeAgendaTech.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D5F5B1379E06D00A90B6B /* DescribeAgendaTech.m */; };
 		8C5D5FF11379E92700A90B6B /* iAgendaTechAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D5FF01379E92700A90B6B /* iAgendaTechAppDelegate.m */; };
 		8C5D61B0137B10D800A90B6B /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D619A137B10D800A90B6B /* NSObject+JSON.m */; };
 		8C5D61B1137B10D800A90B6B /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D619D137B10D800A90B6B /* SBJsonParser.m */; };
@@ -27,11 +26,40 @@
 		8C5D61B8137B10D800A90B6B /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D61AB137B10D800A90B6B /* SBJsonStreamWriterState.m */; };
 		8C5D61B9137B10D800A90B6B /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D61AD137B10D800A90B6B /* SBJsonTokeniser.m */; };
 		8C5D61BA137B10D800A90B6B /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D61AF137B10D800A90B6B /* SBJsonWriter.m */; };
+		8CB9CA0B137B831F006F0F9F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		8CB9CA0C137B831F006F0F9F /* UISpec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CBCE15013661DE700677AD6 /* UISpec.bundle */; };
+		8CB9CA0E137B831F006F0F9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		8CB9CA0F137B831F006F0F9F /* iAgendaTech.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2819305F112F816700ECF9B4 /* iAgendaTech.xcdatamodeld */; };
+		8CB9CA10137B831F006F0F9F /* DescribeAgendaTech.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D5F5B1379E06D00A90B6B /* DescribeAgendaTech.m */; };
+		8CB9CA11137B831F006F0F9F /* iAgendaTechAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D5FF01379E92700A90B6B /* iAgendaTechAppDelegate.m */; };
+		8CB9CA12137B831F006F0F9F /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D619A137B10D800A90B6B /* NSObject+JSON.m */; };
+		8CB9CA13137B831F006F0F9F /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D619D137B10D800A90B6B /* SBJsonParser.m */; };
+		8CB9CA14137B831F006F0F9F /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D619F137B10D800A90B6B /* SBJsonStreamParser.m */; };
+		8CB9CA15137B831F006F0F9F /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D61A1137B10D800A90B6B /* SBJsonStreamParserAccumulator.m */; };
+		8CB9CA16137B831F006F0F9F /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D61A3137B10D800A90B6B /* SBJsonStreamParserAdapter.m */; };
+		8CB9CA17137B831F006F0F9F /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D61A5137B10D800A90B6B /* SBJsonStreamParserState.m */; };
+		8CB9CA18137B831F006F0F9F /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D61A7137B10D800A90B6B /* SBJsonStreamWriter.m */; };
+		8CB9CA19137B831F006F0F9F /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D61A9137B10D800A90B6B /* SBJsonStreamWriterAccumulator.m */; };
+		8CB9CA1A137B831F006F0F9F /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D61AB137B10D800A90B6B /* SBJsonStreamWriterState.m */; };
+		8CB9CA1B137B831F006F0F9F /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D61AD137B10D800A90B6B /* SBJsonTokeniser.m */; };
+		8CB9CA1C137B831F006F0F9F /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D61AF137B10D800A90B6B /* SBJsonWriter.m */; };
+		8CB9CA1F137B831F006F0F9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		8CB9CA20137B831F006F0F9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		8CB9CA21137B831F006F0F9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		8CB9CA22137B831F006F0F9F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
+		8CB9CA23137B831F006F0F9F /* libUISpec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBCE14213661C8E00677AD6 /* libUISpec.a */; };
 		8CBCE14513661D0600677AD6 /* libUISpec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBCE14213661C8E00677AD6 /* libUISpec.a */; };
 		8CBCE15113661DE700677AD6 /* UISpec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CBCE15013661DE700677AD6 /* UISpec.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8CB9CA09137B831F006F0F9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CBCE13813661C8E00677AD6 /* UISpec.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C76EB5D10F74586B00EF8398;
+			remoteInfo = UISpec;
+		};
 		8CBCE14113661C8E00677AD6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8CBCE13813661C8E00677AD6 /* UISpec.xcodeproj */;
@@ -92,6 +120,8 @@
 		8C5D61AD137B10D800A90B6B /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonTokeniser.m; path = "../Vendor/json-framework/Classes/SBJsonTokeniser.m"; sourceTree = SOURCE_ROOT; };
 		8C5D61AE137B10D800A90B6B /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = "../Vendor/json-framework/Classes/SBJsonWriter.h"; sourceTree = SOURCE_ROOT; };
 		8C5D61AF137B10D800A90B6B /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = "../Vendor/json-framework/Classes/SBJsonWriter.m"; sourceTree = SOURCE_ROOT; };
+		8CB9CA27137B831F006F0F9F /* iAgendaTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAgendaTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CB9CA29137B831F006F0F9F /* iAgendaTech-Info Specs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iAgendaTech-Info Specs.plist"; sourceTree = "<group>"; };
 		8CBCE13813661C8E00677AD6 /* UISpec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UISpec.xcodeproj; path = ../Vendor/UISpec/xcode/UISpec/UISpec.xcodeproj; sourceTree = SOURCE_ROOT; };
 		8CBCE15013661DE700677AD6 /* UISpec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UISpec.bundle; path = ../Vendor/UISpec/src/UISpec.bundle; sourceTree = SOURCE_ROOT; };
 		8CBCE1D51366280300677AD6 /* CallCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallCache.h; path = ../Vendor/UISpec/headers/CallCache.h; sourceTree = SOURCE_ROOT; };
@@ -140,6 +170,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CB9CA1E137B831F006F0F9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB9CA1F137B831F006F0F9F /* Foundation.framework in Frameworks */,
+				8CB9CA20137B831F006F0F9F /* UIKit.framework in Frameworks */,
+				8CB9CA21137B831F006F0F9F /* CoreGraphics.framework in Frameworks */,
+				8CB9CA22137B831F006F0F9F /* CoreData.framework in Frameworks */,
+				8CB9CA23137B831F006F0F9F /* libUISpec.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -147,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* iAgendaTech.app */,
+				8CB9CA27137B831F006F0F9F /* iAgendaTech.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,6 +224,7 @@
 				2819305F112F816700ECF9B4 /* iAgendaTech.xcdatamodeld */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* iAgendaTech-Info.plist */,
+				8CB9CA29137B831F006F0F9F /* iAgendaTech-Info Specs.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -348,6 +392,24 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* iAgendaTech.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8CB9CA07137B831F006F0F9F /* iAgendaTech Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CB9CA24137B831F006F0F9F /* Build configuration list for PBXNativeTarget "iAgendaTech Specs" */;
+			buildPhases = (
+				8CB9CA0A137B831F006F0F9F /* Resources */,
+				8CB9CA0D137B831F006F0F9F /* Sources */,
+				8CB9CA1E137B831F006F0F9F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CB9CA08137B831F006F0F9F /* PBXTargetDependency */,
+			);
+			name = "iAgendaTech Specs";
+			productName = iAgendaTech;
+			productReference = 8CB9CA27137B831F006F0F9F /* iAgendaTech.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -378,6 +440,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* iAgendaTech */,
+				8CB9CA07137B831F006F0F9F /* iAgendaTech Specs */,
 			);
 		};
 /* End PBXProject section */
@@ -409,6 +472,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CB9CA0A137B831F006F0F9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB9CA0B137B831F006F0F9F /* MainWindow.xib in Resources */,
+				8CB9CA0C137B831F006F0F9F /* UISpec.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -418,7 +490,6 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				28193060112F816700ECF9B4 /* iAgendaTech.xcdatamodeld in Sources */,
-				8C5D5F5C1379E06D00A90B6B /* DescribeAgendaTech.m in Sources */,
 				8C5D5FF11379E92700A90B6B /* iAgendaTechAppDelegate.m in Sources */,
 				8C5D61B0137B10D800A90B6B /* NSObject+JSON.m in Sources */,
 				8C5D61B1137B10D800A90B6B /* SBJsonParser.m in Sources */,
@@ -434,9 +505,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CB9CA0D137B831F006F0F9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB9CA0E137B831F006F0F9F /* main.m in Sources */,
+				8CB9CA0F137B831F006F0F9F /* iAgendaTech.xcdatamodeld in Sources */,
+				8CB9CA10137B831F006F0F9F /* DescribeAgendaTech.m in Sources */,
+				8CB9CA11137B831F006F0F9F /* iAgendaTechAppDelegate.m in Sources */,
+				8CB9CA12137B831F006F0F9F /* NSObject+JSON.m in Sources */,
+				8CB9CA13137B831F006F0F9F /* SBJsonParser.m in Sources */,
+				8CB9CA14137B831F006F0F9F /* SBJsonStreamParser.m in Sources */,
+				8CB9CA15137B831F006F0F9F /* SBJsonStreamParserAccumulator.m in Sources */,
+				8CB9CA16137B831F006F0F9F /* SBJsonStreamParserAdapter.m in Sources */,
+				8CB9CA17137B831F006F0F9F /* SBJsonStreamParserState.m in Sources */,
+				8CB9CA18137B831F006F0F9F /* SBJsonStreamWriter.m in Sources */,
+				8CB9CA19137B831F006F0F9F /* SBJsonStreamWriterAccumulator.m in Sources */,
+				8CB9CA1A137B831F006F0F9F /* SBJsonStreamWriterState.m in Sources */,
+				8CB9CA1B137B831F006F0F9F /* SBJsonTokeniser.m in Sources */,
+				8CB9CA1C137B831F006F0F9F /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8CB9CA08137B831F006F0F9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UISpec;
+			targetProxy = 8CB9CA09137B831F006F0F9F /* PBXContainerItemProxy */;
+		};
 		8CBCE14C13661D4D00677AD6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UISpec;
@@ -469,6 +567,35 @@
 				GCC_PREFIX_HEADER = iAgendaTech_Prefix.pch;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "iAgendaTech-Info.plist";
+				PRODUCT_NAME = iAgendaTech;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CB9CA25137B831F006F0F9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iAgendaTech_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "iAgendaTech-Info copy.plist";
+				PRODUCT_NAME = iAgendaTech;
+			};
+			name = Debug;
+		};
+		8CB9CA26137B831F006F0F9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iAgendaTech_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "iAgendaTech-Info copy.plist";
 				PRODUCT_NAME = iAgendaTech;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -509,6 +636,15 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CB9CA24137B831F006F0F9F /* Build configuration list for PBXNativeTarget "iAgendaTech Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CB9CA25137B831F006F0F9F /* Debug */,
+				8CB9CA26137B831F006F0F9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
