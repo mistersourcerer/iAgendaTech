@@ -1,3 +1,4 @@
 .DS_Store
 iAgendaTech/build/*
 iAgendaTech/iAgendaTech.xcodeproj/ricardo.*
+Vendor/OCMock/Source
