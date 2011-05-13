@@ -26,6 +26,7 @@
 		8C5D61B8137B10D800A90B6B /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D61AB137B10D800A90B6B /* SBJsonStreamWriterState.m */; };
 		8C5D61B9137B10D800A90B6B /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D61AD137B10D800A90B6B /* SBJsonTokeniser.m */; };
 		8C5D61BA137B10D800A90B6B /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D61AF137B10D800A90B6B /* SBJsonWriter.m */; };
+		8C8724E2137DAEAA00B074BD /* DescribeEventsStreamDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8724E1137DAEAA00B074BD /* DescribeEventsStreamDataSource.m */; };
 		8CB9CA0B137B831F006F0F9F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		8CB9CA0C137B831F006F0F9F /* UISpec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CBCE15013661DE700677AD6 /* UISpec.bundle */; };
 		8CB9CA0E137B831F006F0F9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -48,7 +49,6 @@
 		8CB9CA21137B831F006F0F9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		8CB9CA22137B831F006F0F9F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
 		8CB9CA23137B831F006F0F9F /* libUISpec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBCE14213661C8E00677AD6 /* libUISpec.a */; };
-		8CB9CA42137B8538006F0F9F /* DescribeStreamDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9CA40137B8538006F0F9F /* DescribeStreamDataSource.m */; };
 		8CBCE15113661DE700677AD6 /* UISpec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CBCE15013661DE700677AD6 /* UISpec.bundle */; };
 /* End PBXBuildFile section */
 
@@ -113,9 +113,9 @@
 		8C5D61AD137B10D800A90B6B /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonTokeniser.m; path = "../Vendor/json-framework/Classes/SBJsonTokeniser.m"; sourceTree = SOURCE_ROOT; };
 		8C5D61AE137B10D800A90B6B /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = "../Vendor/json-framework/Classes/SBJsonWriter.h"; sourceTree = SOURCE_ROOT; };
 		8C5D61AF137B10D800A90B6B /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = "../Vendor/json-framework/Classes/SBJsonWriter.m"; sourceTree = SOURCE_ROOT; };
+		8C8724E1137DAEAA00B074BD /* DescribeEventsStreamDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescribeEventsStreamDataSource.m; sourceTree = "<group>"; };
 		8CB9CA27137B831F006F0F9F /* iAgendaTechSpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iAgendaTechSpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB9CA29137B831F006F0F9F /* iAgendaTech-Info Specs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iAgendaTech-Info Specs.plist"; sourceTree = "<group>"; };
-		8CB9CA40137B8538006F0F9F /* DescribeStreamDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescribeStreamDataSource.m; sourceTree = "<group>"; };
 		8CBCE13813661C8E00677AD6 /* UISpec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UISpec.xcodeproj; path = ../Vendor/UISpec/xcode/UISpec/UISpec.xcodeproj; sourceTree = SOURCE_ROOT; };
 		8CBCE15013661DE700677AD6 /* UISpec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UISpec.bundle; path = ../Vendor/UISpec/src/UISpec.bundle; sourceTree = SOURCE_ROOT; };
 		8CBCE1D51366280300677AD6 /* CallCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallCache.h; path = ../Vendor/UISpec/headers/CallCache.h; sourceTree = SOURCE_ROOT; };
@@ -311,7 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				8C5D5F5B1379E06D00A90B6B /* DescribeAgendaTech.m */,
-				8CB9CA40137B8538006F0F9F /* DescribeStreamDataSource.m */,
+				8C8724E1137DAEAA00B074BD /* DescribeEventsStreamDataSource.m */,
 			);
 			name = Specs;
 			path = ../Specs;
@@ -495,6 +495,7 @@
 				8C5D61B8137B10D800A90B6B /* SBJsonStreamWriterState.m in Sources */,
 				8C5D61B9137B10D800A90B6B /* SBJsonTokeniser.m in Sources */,
 				8C5D61BA137B10D800A90B6B /* SBJsonWriter.m in Sources */,
+				8C8724E2137DAEAA00B074BD /* DescribeEventsStreamDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +518,6 @@
 				8CB9CA1A137B831F006F0F9F /* SBJsonStreamWriterState.m in Sources */,
 				8CB9CA1B137B831F006F0F9F /* SBJsonTokeniser.m in Sources */,
 				8CB9CA1C137B831F006F0F9F /* SBJsonWriter.m in Sources */,
-				8CB9CA42137B8538006F0F9F /* DescribeStreamDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

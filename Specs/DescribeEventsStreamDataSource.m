@@ -2,15 +2,15 @@
 #import "UISpec.h"
 #import <OCMock.h>
 
-@interface DescribeStreamDataSource : NSObject<UISpec> {}
+@interface DescribeEventsStreamDataSource : NSObject<UISpec> {}
 @end
 
-@implementation DescribeStreamDataSource
+@implementation DescribeEventsStreamDataSource
 
 - (void) itShouldLoadEventsAssynchronously {
 	// mocar um streamdatasource aqui usa o json-framework
-	// para carregar os eventos
-	id mock = [OCMockObject mockForClass:[NSString class]];
+	// para carregar os eventos 
+	id mock = [OCMockObject mockForClass:[EventsStreamDataSource class]];
 	NSLog(@"mock: %@", mock);
 }
 
